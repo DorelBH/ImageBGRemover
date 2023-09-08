@@ -1,6 +1,7 @@
+
 import './Image.css';
 
-import { useState, useRef } from "react";
+import { useState, useRef , useEffect} from "react";
 
 
 function Image(props) {
@@ -8,10 +9,15 @@ function Image(props) {
     const [color, setcolor] = useState('red');
     const [image_only_disp, setimage_only_disp] = useState('');
 
-        // if() {
+    useEffect(() => {
+        if(props.image_only==true) {
+            setimage_only_disp('image_only_disp');
+        } else {
+            setimage_only_disp('');
+        }
+    },[props.image_only]);
 
-        // }
-
+    
     const inputElement = useRef();
 
     const focusInput = () => {
@@ -38,7 +44,7 @@ function Image(props) {
 
                      <div className={`image_pace ${image_only_disp}`} >
 
-
+                    
                     </div>  
             </div>
         </div>
