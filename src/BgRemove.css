@@ -146,6 +146,7 @@ body{
     background-repeat: no-repeat;
     background-position: 9px 7px;
     padding-left: 20px;
+    cursor: pointer;
 }
 
 .file_input{
@@ -238,6 +239,7 @@ body{
     border-radius: 25px;
     background-color: transparent;
     color: black;
+    cursor: pointer;
 }
 
 .download_popup_approve{
@@ -250,6 +252,7 @@ body{
     border-radius: 25px;
     color: white;
     background: linear-gradient(71deg,#9C27B0, #03A9F4);
+    cursor: pointer;
 }
 
 .DownloadsFolder{
@@ -262,6 +265,7 @@ body{
     position: absolute;
     top: 10px;
     left: 10px;
+    cursor: pointer;
 }
 
 .not_robot{
@@ -274,4 +278,11 @@ body{
     position: absolute;
     left: 200px;
     top: 63px;
+}
+
+.displyMsg{
+    position: absolute;
+    left: -105px;
+    top: 0px;
+    color: red;
 }
